@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>家教網-註冊</title>
+  <style>
+  header,form{
+    text-align: center;
+  }
+  form{
+    border: 5px solid gray;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sign Up</h1>
+  </header>
+  <form action="member_data.php" method="post">
+    <form action="Home_Page.php" method="post">
+      Account(帳號):<input type="text" name="uact"><br><br>
+    </form>
+    Password(密碼):<input type="password" name="upas"><br><br>
+    Name(姓名):<input type="text" name="uname"><br><br>
+    Birthday(生日):<input type="date" name="ubirthday"><br><br>
+    Gender(性別):<select name="ugender">
+      <option value="male">Male(男)</option>
+      <option value="female">Female(女)</option>
+      <option value="other">Other(其他)</option>
+    </select><br><br>
+    Email(電子信箱):<input type="email" name="uemail" placeholder="email@mis.com"><br><br>
+    Phone(電話):<input type="tel"  name="utel" placeholder="請輸入連絡電話"><br><br>
+
+    <table style="width:100%,border:1px" id="studentForm">
+      <caption>Student Information Form/學生基本資料表</caption>
+      <tr>
+        <th>Basic informtion/基本資料</th>
+        <th>Information Field/資料填寫區</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="text" name="ugrade"></td>
+      </tr>
+      <tr>
+        <td>Subject needed(需求科目):</td>
+        <td><input type="text" name="usubject"></td>
+      </tr>
+      <tr>
+        <td>Learning Status(學習狀況):</td>
+        <td><input type="text" name="ustatus"></td>
+      </tr>
+    </table>
+
+    <table style="width:100%,border:1px" id="teacherForm">
+      <caption>Teacher Information Form/教師基本資料表</caption>
+      <tr>
+        <th>Basic informtion/基本資料</th>
+        <th>Information Field/資料填寫區</th>
+      </tr>
+      <tr>
+        <td>Salary wanted(需求薪資):</td>
+        <td><input type="number" name="usalary"></td>
+      </tr>
+      <tr>
+        <th>Class Information/教課資訊</th>
+        <th>Information Field/資料填寫區</th>
+      </tr>
+      <tr>
+        <td>Time(上課時間):</td>
+        <td>From<input type="time" name="utimeStart">To<input type="time" name="utimeEnd"></td>
+      </tr>
+      <tr>
+        <td>Location(上課地址):</td>
+        <td><input type="text" name="ulocation"></td>
+      </tr>
+    <tr>
+      <td rowspan="4">Surrounding(上課環境):</td>
+      <td><input type="radio" name="classplace" value="company">公司</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="classplace" value="home">家裡</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="classplace" value="thome">教師家裡</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="classplace" value="other">其他</td>
+    </tr>
+  </table>
+    <a href="Home_Page.php">
+      <input type="submit" value="Sign Up">
+    </a>  
+    <input type="reset" value="Clear">
+  </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+h1 {
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+body {
+    background-image: url("background.gif");
+    font-family: 'Cabin Condensed', sans-serif;
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px #000;
+    border: solid #000 3px;
+    background: #fafafa;
+}
+
+form.table {
+    text-align: center;
+}
+
+input {
+    border: 1px dotted #999;
+    background-color: #fff;
+    border-radius: 15px;
+    border: medium #c0c0c0 dotted;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 0.15px 0.2px black;
+}
